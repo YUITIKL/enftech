@@ -1,4 +1,4 @@
-import 'package:enftech/dripScreen.dart';
+import 'package:enftech/screens/dripScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -7,8 +7,9 @@ import 'package:flutter/src/widgets/framework.dart';
 class ButtonMain extends StatefulWidget {
   final String title;
   final String image;
+  final Widget page;
 
-  ButtonMain(this.title, this.image);
+  ButtonMain(this.title, this.image, this.page);
 
   @override
   State<ButtonMain> createState() => _ButtonMainState();
@@ -21,15 +22,14 @@ class _ButtonMainState extends State<ButtonMain> {
       padding: EdgeInsets.all(10),
       child: SizedBox(
           height: 80,
-          width: 1000,
+          width: MediaQuery.of(context).size.width,
           child: ElevatedButton(
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.green),
                 elevation: MaterialStateProperty.all(5)),
             onPressed: () {
-              print("Tá chamando");
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DripScreen()));
+                  MaterialPageRoute(builder: (context) => widget.page));
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
