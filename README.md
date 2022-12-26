@@ -1,16 +1,8 @@
-# enftech
+# Enftech
+APP developed to assist in calculations used in the health area
 
-A new Flutter project.
+## Development
+We used the creation of widgets and management of states in addition to some plugins
+The use is free and for functioning it is enough to download and debug
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Design sem nome](https://user-images.githubusercontent.com/84604159/209574362-b23ac01e-0ff3-443a-b939-29cfa67e2e82.png)
